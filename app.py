@@ -136,10 +136,9 @@ PALETTE = [TERRACOTTA, ARMY_GREEN, BEIGE, CHARCOAL, GREY]
 @st.cache_data
 def load_data():
     base = os.path.dirname(__file__)
-
-    pred_path = os.path.join(base, "outputs", "predictions.csv")
-    cv_path   = os.path.join(base, "outputs", "cv_scores.csv")
-    fi_path   = os.path.join(base, "outputs", "feature_importance.csv")
+    pred_path = os.path.join(base, "predictions.csv")
+    cv_path   = os.path.join(base, "cv_scores.csv")
+    fi_path   = os.path.join(base, "feature_importance.csv")
 
     if not os.path.exists(pred_path):
         st.error("predictions.csv not found. Run your pipeline first.")
