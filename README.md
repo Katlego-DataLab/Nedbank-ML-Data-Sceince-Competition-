@@ -1,6 +1,5 @@
 # 🏦 Nedbank · Banking on Behaviour
 ### *Predicting Customer Transaction Activity to Drive Retention & Revenue*
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/XGBoost-Poisson-FF6600?style=for-the-badge&logo=xgboost&logoColor=white"/>
@@ -10,15 +9,10 @@
   <img src="https://img.shields.io/badge/Competition-Zindi-blueviolet?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge"/>
 </p>
-
 <p align="center">
   <a href="https://nedbank-customer-engagement.streamlit.app/">
-    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
+    <img src="https://img.shields.io/badge/Open%20in%20Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open in Streamlit"/>
   </a>
-</p>
-
-<p align="center">
-  <b> <a href="https://nedbank-customer-engagement.streamlit.app/">Live Dashboard → nedbank-customer-engagement.streamlit.app</a></b>
 </p>
 
 ---
