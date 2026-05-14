@@ -18,27 +18,27 @@
 </p>
 
 <p align="center">
-  <b>🚀 <a href="https://nedbank-customer-engagement.streamlit.app/">Live Dashboard → nedbank-customer-engagement.streamlit.app</a></b>
+  <b> <a href="https://nedbank-customer-engagement.streamlit.app/">Live Dashboard → nedbank-customer-engagement.streamlit.app</a></b>
 </p>
 
 ---
 
-## 🚀 TL;DR
+##  Quick Overview
 
-> Built a **two-stage ML pipeline** that processes **18 million+ raw banking transactions** and predicts how many transactions each customer will make in the next 3 months — enabling Nedbank to act on churn risk, tailor product offers, and optimise marketing spend **before** customers disengage.
+> Built a **two-stage ML pipeline** that processes **18 million+ raw banking transactions** and predicts how many transactions each customer will make in the next 3 months enabling Nedbank to act on churn risk, tailor product offers, and optimise marketing spend before customers disengage.
 
 | What | Result |
 |------|--------|
-| 🎯 Target | Predict next-3-month transaction count per customer |
-| 📊 Data Scale | **18,017,073 raw transactions** processed end-to-end |
-| 📉 Best CV Score | **RMSLE ~0.35** (XGB + LGB ensemble, temporal CV) |
-| 🧠 Models | XGBoost · LightGBM · CatBoost · Two-stage zero-inflation |
-| 💼 Business Value | Proactive churn intervention, personalised engagement, resource planning |
-| 🖥️ Deployed | [Live Streamlit Dashboard](https://nedbank-customer-engagement.streamlit.app/) |
+|  Target | Predict next-3-month transaction count per customer |
+|  Data Scale | **18,017,073 raw transactions** processed end-to-end |
+|  Best CV Score | **RMSLE ~0.35** (XGB + LGB ensemble, temporal CV) |
+|  Models | XGBoost · LightGBM · CatBoost · Two-stage zero-inflation |
+|  Business Value | Proactive churn intervention, personalised engagement, resource planning |
+|  Deployed | [Live Streamlit Dashboard](https://nedbank-customer-engagement.streamlit.app/) |
 
 ---
 
-## 💼 Business Problem
+##  Business Problem
 
 Banks lose millions every year to **silent churn** — customers who slowly stop transacting without ever formally closing their account. By the time a relationship manager notices, the customer has already moved to a competitor.
 
@@ -47,20 +47,20 @@ This project answers one critical question:
 > **"Which customers are likely to go quiet in the next quarter — and how active will the rest be?"**
 
 Getting this right means:
-- 💸 **Revenue protection** — retain high-value customers before they leave
-- 🎯 **Smarter marketing** — stop wasting budget on already-engaged customers
-- 📊 **Resource allocation** — focus retention teams where they'll have the most impact
-- ⚡ **Early warning** — flag at-risk customers 90 days in advance, not after the fact
+-  **Revenue protection** — retain high-value customers before they leave
+-  **Smarter marketing** — stop wasting budget on already-engaged customers
+-  **Resource allocation** — focus retention teams where they'll have the most impact
+-  **Early warning** — flag at-risk customers 90 days in advance, not after the fact
 
 ---
 
-## 🎯 Business Impact
+##  Business Impact
 
 **Who uses this:**
-- 🏷️ **Marketing teams** — segment customers into Active / At Risk / Dormant buckets for targeted campaigns
-- 📞 **Retention / CRM teams** — prioritise outreach to customers predicted to drop off
-- 📈 **Finance & planning** — forecast transaction volumes per segment for capacity planning
-- 🧑‍💼 **Relationship managers** — receive alerts for at-risk clients in their portfolio
+-  **Marketing teams** — segment customers into Active / At Risk / Dormant buckets for targeted campaigns
+-  **Retention / CRM teams** — prioritise outreach to customers predicted to drop off
+-  **Finance & planning** — forecast transaction volumes per segment for capacity planning
+-  **Relationship managers** — receive alerts for at-risk clients in their portfolio
 
 **What decisions this enables:**
 - Trigger a personalised offer 90 days before a customer goes quiet
@@ -69,23 +69,23 @@ Getting this right means:
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Metric | Value | What It Means |
 |--------|-------|---------------|
 | **Raw Transactions Processed** | **18,017,073** | Full-scale production data, not a sample |
-| **CV RMSLE (XGB)** | ~0.35 | Predictions within ~35% error on log scale — robust for count data |
+| **CV RMSLE (XGB)** | ~0.35 | Predictions within ~35% error on log scale robust for count data |
 | **CV RMSLE (LGB)** | ~0.36 | Strong second model; divergence confirms ensemble diversity |
 | **Ensemble Gain** | ✅ | Blended predictions outperform either model alone |
 | **Zero-inflation Handling** | ✅ | Stage-1 classifier explicitly flags customers likely to be inactive |
 | **Features Engineered** | 100+ | Velocity, decay, debit/credit, balance, behavioural embeddings |
 
 > **Why are these results credible?**
-> Temporal cross-validation was used — future data never leaked into training folds. The two-stage approach (activity classifier × count regressor) explicitly handles the large proportion of zero-transaction customers, which is the hardest part of this problem.
+> Temporal cross-validation was used, future data never leaked into training folds. The two-stage approach (activity classifier × count regressor) explicitly handles the large proportion of zero-transaction customers, which is the hardest part of this problem.
 
 ---
 
-## 🖥️ Live Dashboard
+##  Live Dashboard
 
 **👉 [nedbank-customer-engagement.streamlit.app](https://nedbank-customer-engagement.streamlit.app/)**
 
@@ -142,7 +142,7 @@ streamlit run app.py
 
 ---
 
-## 🧠 Key Technical Decisions
+##  Key Technical Decisions
 
 | Decision | Why It Matters |
 |----------|---------------|
@@ -156,7 +156,7 @@ streamlit run app.py
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 - **Recency dominates.** How recently a customer transacted is a stronger predictor than their all-time average.
 - **Holiday spend signals future activity.** Customers with elevated Nov/Dec/Jan transaction spikes tend to be consistently engaged year-round.
@@ -166,7 +166,7 @@ streamlit run app.py
 
 ---
 
-## 🏗️ Production Thinking
+##  Production Thinking
 
 Here's how this pipeline would operate inside a real bank:
 
@@ -189,7 +189,7 @@ Monthly Data Pull (Core Banking System)
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 - [ ] **Add Prophet seasonality features** — already scaffolded in pipeline
 - [ ] **Customer lifetime value integration** — weight predictions by revenue tier
@@ -199,7 +199,7 @@ Monthly Data Pull (Core Banking System)
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 📦 Nedbank-Customer-Behaviour-app/
@@ -222,7 +222,7 @@ Monthly Data Pull (Core Banking System)
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 # 1. Clone
@@ -243,7 +243,7 @@ Or skip all of this and visit the **[live dashboard](https://nedbank-customer-en
 
 ---
 
-## 🙋 About This Project
+##  About This Project
 
 This is part of my **12-month journey from aspiring data scientist to ML practitioner**. Each project tackles a real business problem, uses production-grade code structure, and is built to be deployable — not just notebook-level exploratory work.
 
