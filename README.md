@@ -40,11 +40,11 @@
 
 ##  Business Problem
 
-Banks lose millions every year to **silent churn** — customers who slowly stop transacting without ever formally closing their account. By the time a relationship manager notices, the customer has already moved to a competitor.
+Banks lose millions every year to **silent churn**  customers who slowly stop transacting without ever formally closing their account. By the time a relationship manager notices, the customer has already moved to a competitor.
 
 This project answers one critical question:
 
-> **"Which customers are likely to go quiet in the next quarter — and how active will the rest be?"**
+> **"Which customers are likely to go quiet in the next quarter and how active will the rest be?"**
 
 Getting this right means:
 -  **Revenue protection** — retain high-value customers before they leave
